@@ -10,7 +10,14 @@
   --secondary-bg-color: #2f303a;
   --filter-bg-color: #f5f4fa;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -20,6 +27,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.71;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
