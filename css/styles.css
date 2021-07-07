@@ -165,19 +165,32 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
 }
-.feature-list .title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
 
 .section {
   padding-top: 94px;
+}
+.section:first-child {
+  padding-bottom: 94px;
 }
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+/* FEATURES style */
+.features-list {
+  display: flex;
+}
+
+.features-list .title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .list-element {
