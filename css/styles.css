@@ -48,7 +48,33 @@ body {
 .link {
   text-decoration: none;
 }
+.project .link,
+.header-contact .link {
+  color: inherit;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: violet;
+}
+/* HEADER */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* Logo styles */
+
+.page-header .logo {
+  margin-right: 93px;
+}
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -66,6 +92,10 @@ body {
 /* site navigation styles */
 .site-nav {
   display: flex;
+  margin-right: 331px;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .site-nav .link {
   color: var(--title-text-color);
@@ -73,24 +103,15 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-.project .link,
-.contact.link {
-  color: inherit;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  background-color: violet;
-}
-.page-header .container {
+/* contact style */
+.header-contact {
   display: flex;
 }
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
+
+/* header link style */
 .page-header .link {
   font-weight: 500;
   line-height: 1.14;
@@ -101,7 +122,15 @@ body {
   color: var(--accent-color);
 }
 /* hero style */
-.hero .hero-title {
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-white-color);
+}
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -114,13 +143,16 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
-.hero {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-white-color);
-}
+
 .hero .button {
+  display: block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  margin: 0 auto;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -139,6 +171,9 @@ body {
   text-transform: uppercase;
 }
 
+.section {
+  padding-top: 94px;
+}
 .section-title {
   font-size: 36px;
   line-height: 1.16;
