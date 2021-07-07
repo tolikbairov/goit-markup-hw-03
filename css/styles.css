@@ -18,7 +18,11 @@
 *::after {
   box-sizing: inherit;
 } */
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 h1,
 h2,
 h3,
@@ -57,12 +61,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  background-color: violet;
 }
 /* HEADER */
 
 .header-container {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .page-header {
@@ -76,6 +80,8 @@ body {
   margin-right: 93px;
 }
 .logo {
+  display: inline-block;
+
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -123,43 +129,40 @@ body {
 }
 /* hero style */
 .hero {
+  text-align: center;
+  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-color: var(--secondary-bg-color);
   color: var(--primary-white-color);
 }
 .hero-title {
   max-width: 696px;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
-  display: inline-block;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .hero .button {
-  display: block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   padding: 10px 32px;
   border-radius: 4px;
 
-  margin: 0 auto;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  text-align: center;
+
   letter-spacing: 0.06em;
-}
-/* title style */
+} /* title style */
 .title,
 .section-title {
   color: var(--title-text-color);
@@ -168,11 +171,11 @@ body {
 
 .section {
   padding-top: 94px;
-}
-.section:first-child {
   padding-bottom: 94px;
 }
+
 .section-title {
+  margin: 0 auto 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -193,28 +196,57 @@ body {
   margin-right: 30px;
 }
 
-.team .list-element {
+/* Services section */
+.services-list {
+  display: flex;
+}
+.services-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Team section */
+.team {
+  background-color: var(--filter-bg-color);
+}
+.team-list {
+  display: flex;
+}
+.team-item {
   text-align: center;
   font-size: 16px;
   line-height: 1.88;
 }
-
-.team .title {
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-picture {
+  margin-bottom: 30px;
+}
+.team-item .title {
   font-weight: 500;
+  margin-bottom: 10px;
 }
 /* footer style */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
 .footer .logo-second {
   color: var(--primary-white-color);
 }
+
 .text-address {
   color: var(--primary-white-color);
 }
 .address {
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+.address > *:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address .link {
   color: rgba(255, 255, 255, 0.6);
