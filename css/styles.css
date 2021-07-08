@@ -101,7 +101,6 @@ body {
 /* site navigation styles */
 .site-nav {
   display: flex;
-  margin-right: 331px;
 }
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -115,6 +114,7 @@ body {
 /* contact style */
 .header-contact {
   display: flex;
+  margin-left: auto;
 }
 .contact-item:not(:last-child) {
   margin-right: 50px;
