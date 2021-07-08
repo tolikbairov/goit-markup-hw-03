@@ -201,7 +201,6 @@ body {
 }
 .features-list > .item {
   width: 270px;
-  height: 101px;
 }
 .features-list > .item:not(:last-child) {
   margin-right: 30px;
