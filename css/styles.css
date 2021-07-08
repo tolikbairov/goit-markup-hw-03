@@ -325,7 +325,7 @@ body {
   margin-bottom: -30px;
 }
 .project-set > .item {
-  flex-basis: calc((100% / 3) -30);
+  flex-basis: calc((100% / 3) - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -334,6 +334,7 @@ body {
   text-align: left;
   border: 1px solid var(--border-color);
 }
+
 .card-text > .title {
   margin-bottom: 4px;
 }
