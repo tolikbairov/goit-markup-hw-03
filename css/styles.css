@@ -191,6 +191,7 @@ body {
 /* FEATURES style */
 .features-list {
   display: flex;
+  justify-content: center;
 }
 
 .features-list .title {
@@ -234,12 +235,13 @@ body {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-picture {
-  margin-bottom: 30px;
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-item .title {
-  font-weight: 500;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 /* footer style */
 .footer {
