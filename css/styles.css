@@ -180,6 +180,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section.no-btm-padding {
+  padding-bottom: 0;
+}
 
 .section-title {
   margin: 0 auto 50px;
