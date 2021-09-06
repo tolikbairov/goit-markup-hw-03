@@ -321,6 +321,9 @@ body {
   color: var(--primary-white-color);
 }
 /* projects styles */
+.project-card {
+  border: 1px solid var(--border-color);
+}
 .project-set .title {
   font-size: 18px;
   line-height: 2;
@@ -341,10 +344,12 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.project-card > a {
+  display: block;
+}
 .card-text {
   padding: 20px 24px;
   text-align: left;
-  border: 1px solid var(--border-color);
 }
 
 .card-text > .title {
